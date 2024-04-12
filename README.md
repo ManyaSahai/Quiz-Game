@@ -10,6 +10,6 @@ This is a very simple quiz game made using kivy. To play the "Language Mastery Q
 
 5.Continue: Continue answering questions until you've completed the quiz. Once you've answered all the questions, the quiz will end, and your final score will be displayed.
 
-6.Restart: If you want to play again, you can restart the app and go through the steps again.
 
-Enjoy playing the "Language Mastery Quiz" and improving your English-to-Spanish translation skills!
+
+
