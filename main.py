@@ -11,7 +11,7 @@ from kivy.uix.popup import Popup
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.widget import Widget
 
-# Dictionary of English words and their Spanish translations
+
 word_dict = {
     "hello": "hola",
     "goodbye": "adiós",
@@ -115,9 +115,7 @@ word_dict = {
     "to find": "encontrar",
     "to happen": "pasar",
     "people": "gente"
-    # Add more words as needed
-
-    # Add more words as needed
+    
 }
 
 class QuizApp(App):
@@ -135,7 +133,7 @@ class QuizApp(App):
 
         layout = BoxLayout(orientation='horizontal')
         with layout.canvas.before:
-            Color(0.2, 9, 0.7, 1)  # Set the background color to dark gray
+            Color(0.2, 9, 0.7, 1) 
             self.bg_image = Rectangle(source='quiz3.jpg', size=(1950,1000))
 
         self.num_questions_input = TextInput(multiline=False, font_size=50, hint_text="Please enter the number of questions\nhere:")
@@ -201,7 +199,7 @@ class QuizApp(App):
             Clock.schedule_once(self.next_question_delay, 2)
         else:
             self.question_label.text = f"Wrong answer. Correct translation is '{self.current_question}'. "
-    # Delay before proceeding to the next question
+    
             Clock.schedule_once(self.next_question_delay, 3)
 
     def next_question_delay(self, dt):
